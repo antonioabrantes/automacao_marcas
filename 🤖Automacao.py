@@ -99,7 +99,7 @@ if uploaded_file:
 
     texto_pdf = ler_pdf_pypdf2(pdf_bytes)
     argumentacao = extrair_argumentacao_ipas(texto_pdf)
-    MAX_CHARS = 24000
+    MAX_CHARS = 1024
     argumentacao = argumentacao[:MAX_CHARS]
 
     st.subheader("🧠 Argumentação do Requerente (extraída automaticamente)")
