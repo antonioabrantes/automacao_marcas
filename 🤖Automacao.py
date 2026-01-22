@@ -101,7 +101,7 @@ if uploaded_file:
     argumentacao = extrair_argumentacao_ipas(texto_pdf)
     st.write("Tamanho original do arquivo:", len(argumentacao))
     MAX_CHARS = 24000
-    argumentacao = argumentacao[:MAX_CHARS]
+    #argumentacao = argumentacao[:MAX_CHARS]
 
     st.subheader("🧠 Argumentação do Requerente (extraída automaticamente)")
     st.text_area(
